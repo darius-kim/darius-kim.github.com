@@ -1,0 +1,213 @@
+@charset "utf-8";
+/**
+ * style.css
+ *
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program. If not, see <http://gnu.org/licenses/lgpl.txt>.
+ *
+ * @project      Weblog and Open Source Projects of Florian Wolters
+ * @package      xhtml-css
+ * @author       Florian Wolters <wolters.fl@gmail.com>
+ * @copyright    2012-2013 Florian Wolters
+ * @cssdoc       version 1.0-pre
+ * @license      http://gnu.org/licenses/lgpl.txt LGPL-3.0+
+ * @link         http://github.com/FlorianWolters/jekyll-bootstrap-theme
+ * @media        all
+ * @valid        true
+ */
+
+@import "pagination.css";
+@import "tag_box.css";
+
+/* Site header */
+
+.container > header {
+    font-weight: bold;
+}
+
+.container > header > p > a {
+    color: black;
+    background-color: inherit;
+}
+
+.container > header a:hover {
+    text-decoration: none;
+}
+
+p > small {
+    font-weight: bold;
+    background-color: inherit;
+    color: grey;
+}
+
+/* Site main content */
+
+[role="main"] {
+    margin: .5em 0;
+    border: .2em solid black;
+    border-radius: .4em;
+    padding: .25em;
+}
+
+[role="main"] a:hover {
+    text-decoration: underline;
+}
+
+/* Site navigation */
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul a, nav ul a:visited {
+    color: grey;
+    background-color: inherit;
+}
+
+nav ul a:hover {
+    color: black;
+    background-color: inherit;
+}
+
+/* Site footer */
+
+.container > footer {
+    margin-top: 1em;
+    border-top: .2em solid #CCCCCC;
+    padding-top: 1em;
+    font-size: 90%;
+    color: grey;
+    background-color: inherit;
+}
+
+.container > footer .links {
+    text-align: right;
+}
+
+/* List of posts */
+
+ul.posts {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.posts span {
+    font-family: Consolas, Monaco, "Lucida Console", monospace;
+    font-size: 90%;
+    color: #CCCCCC;
+    background-color: inherit;
+}
+
+/* Weblog article */
+
+article header p {
+    font-weight: bold;
+}
+
+article div.content {
+    border-top: .2em solid #CCCCCC;
+    border-bottom: .2em solid #CCCCCC;
+}
+
+article footer .license {
+    font-size: 80%;
+    text-align: center;
+}
+
+article footer .post-sharing li {
+    list-style: none;
+    display: inline-block;
+    width: 140px;
+    vertical-align: middle;
+}
+
+article footer .post-sharing, article footer .post-comments {
+    background-color: inherit;
+    color: gray;
+    font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+    font-size: 11px;
+    text-align: center;
+}
+
+/* Tables */
+
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+}
+
+th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+/* Images */
+
+.image {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* About page */
+
+.photograph {
+    float: left;
+    margin-right: 64px;
+}
+
+.networks {
+    text-align: center;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.networks  li {
+    display: inline-block;
+    width: 48px;
+}
+
+.pear {
+    text-align: center;
+}
+
+.pear img {
+    width: 428px;
+    height: 214px;
+    border: .1em solid black;
+    border-radius: 3px;
+}
+
+/* GitHub Gists */
+
+.gist-file {
+  font-size: .8em;
+}
